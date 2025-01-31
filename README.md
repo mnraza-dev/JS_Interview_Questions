@@ -36,9 +36,8 @@
 
 ---
 
-### Detailed Explanations
 
-#### 1. **What are the steps to check if a number is a palindrome?**
+## 1. **What are the steps to check if a number is a palindrome?**
 - Reverse the number and check if it's the same as the original number.
 
 #### 2. **What are the steps to remove duplicates from an array?**
