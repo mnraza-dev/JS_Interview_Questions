@@ -1,7 +1,5 @@
 
----
-
-### Coding Problems
+### JavaScript Coding Problems
 
 | #  | Question | Difficulty | What You Learn | JavaScript Topics |
 |----|----------|------------|----------------|-------------------|
@@ -36,72 +34,73 @@
 
 ---
 
+### Detailed Explanations
 
-## 1. **What are the steps to check if a number is a palindrome?**
+#### [What are the steps to check if a number is a palindrome?](#what-are-the-steps-to-check-if-a-number-is-a-palindrome)
 - Reverse the number and check if it's the same as the original number.
 
-#### 2. **What are the steps to remove duplicates from an array?**
+#### [What are the steps to remove duplicates from an array?](#what-are-the-steps-to-remove-duplicates-from-an-array)
 - Use `Set` to eliminate duplicates or filter through the array.
 
-#### 3. **How to find the longest word in a string?**
+#### [How to find the longest word in a string?](#how-to-find-the-longest-word-in-a-string)
 - Split the string into words and find the word with the maximum length.
 
-#### 4. **How to check if two strings are anagrams of each other?**
+#### [How to check if two strings are anagrams of each other?](#how-to-check-if-two-strings-are-anagrams-of-each-other)
 - Sort both strings and compare if they are the same.
 
-#### 5. **How to reverse a string without using built-in methods?**
+#### [How to reverse a string without using built-in methods?](#how-to-reverse-a-string-without-using-built-in-methods)
 - Loop through the string from end to start and create a new reversed string.
 
-#### 6. **How to find the factorial of a number using recursion?**
+#### [How to find the factorial of a number using recursion?](#how-to-find-the-factorial-of-a-number-using-recursion)
 - Use a recursive function where the base case is 1.
 
-#### 7. **How to find the first non-repeated character in a string?**
+#### [How to find the first non-repeated character in a string?](#how-to-find-the-first-non-repeated-character-in-a-string)
 - Use an object or `Map` to track character frequencies.
 
-#### 8. **What are the steps to check if a number is prime?**
+#### [What are the steps to check if a number is prime?](#what-are-the-steps-to-check-if-a-number-is-prime)
 - Check if the number is divisible by any number from 2 to its square root.
 
-#### 9. **How to implement a basic stack data structure in JavaScript?**
+#### [How to implement a basic stack data structure in JavaScript?](#how-to-implement-a-basic-stack-data-structure-in-javascript)
 - Create a `Stack` class with `push`, `pop`, and `peek` methods.
 
-#### 10. **How to find the maximum product of two integers in an array?**
+#### [How to find the maximum product of two integers in an array?](#how-to-find-the-maximum-product-of-two-integers-in-an-array)
 - Sort the array and return the product of the two largest or two smallest numbers.
 
 ---
 
-#### 11. **What is the difference between `var`, `let`, and `const` in JavaScript?**
+#### [What is the difference between `var`, `let`, and `const` in JavaScript?](#what-is-the-difference-between-var-let-and-const-in-javascript)
 - `var`: Function-scoped, can be re-assigned.
 - `let`: Block-scoped, can be re-assigned.
 - `const`: Block-scoped, cannot be re-assigned.
 
-#### 12. **What is the difference between `==` and `===` in JavaScript?**
+#### [What is the difference between `==` and `===` in JavaScript?](#what-is-the-difference-between-and-in-javascript)
 - `==` performs type coercion, while `===` checks both value and type without coercion.
 
-#### 13. **How does JavaScript interact with the DOM?**
+#### [How does JavaScript interact with the DOM?](#how-does-javascript-interact-with-the-dom)
 - JavaScript can manipulate HTML elements, change styles, and handle events through the DOM.
 
-#### 14. **What is hoisting in JavaScript, and how does it work?**
+#### [What is hoisting in JavaScript, and how does it work?](#what-is-hoisting-in-javascript-and-how-does-it-work)
 - Hoisting is the process of moving declarations to the top of their scope before execution.
 
-#### 15. **What is `MutationObserver`, and what are its use cases?**
+#### [What is `MutationObserver`, and what are its use cases?](#what-is-mutationobserver-and-what-are-its-use-cases)
 - `MutationObserver` allows you to watch for changes in the DOM and act accordingly.
 
-#### 16. **What is JavaScript prototypes, and how do they function?**
+#### [What is JavaScript prototypes, and how do they function?](#what-are-javascript-prototypes-and-how-do-they-function)
 - Prototypes allow objects to inherit properties and methods from other objects.
 
-#### 17. **What are higher-order functions, and how do they work?**
+#### [What are higher-order functions, and how do they work?](#what-are-higher-order-functions-and-how-do-they-work)
 - Higher-order functions are functions that take other functions as arguments or return functions.
 
-#### 18. **What is functional programming, and how is it applied in JavaScript?**
+#### [What is functional programming, and how is it applied in JavaScript?](#what-is-functional-programming-and-how-is-it-applied-in-javascript)
 - It focuses on writing functions that avoid side effects and use pure functions.
 
-#### 19. **How can you optimize DOM manipulations for better performance?**
+#### [How can you optimize DOM manipulations for better performance?](#how-can-you-optimize-dom-manipulations-for-better-performance)
 - Minimize reflows and repaints by batch-processing DOM changes or using `DocumentFragment`.
 
-#### 20. **What are closures in JavaScript, and how are they used?**
+#### [What are closures in JavaScript, and how are they used?](#what-are-closures-in-javascript-and-how-are-they-used)
 - Closures allow functions to remember their lexical scope even when executed outside that scope.
 
-#### 21. **How does JavaScript handle asynchronous operations?**
+#### [How does JavaScript handle asynchronous operations?](#how-does-javascript-handle-asynchronous-operations)
 - JavaScript uses callbacks, promises, and async/await to manage async operations.
 
 ---
