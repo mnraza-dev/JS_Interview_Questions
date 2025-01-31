@@ -34,73 +34,216 @@
 
 ---
 
-### Detailed Explanations
-
-#### [What are the steps to check if a number is a palindrome?](#what-are-the-steps-to-check-if-a-number-is-a-palindrome)
-- Reverse the number and check if it's the same as the original number.
-
-#### [What are the steps to remove duplicates from an array?](#what-are-the-steps-to-remove-duplicates-from-an-array)
-- Use `Set` to eliminate duplicates or filter through the array.
-
-#### [How to find the longest word in a string?](#how-to-find-the-longest-word-in-a-string)
-- Split the string into words and find the word with the maximum length.
-
-#### [How to check if two strings are anagrams of each other?](#how-to-check-if-two-strings-are-anagrams-of-each-other)
-- Sort both strings and compare if they are the same.
-
-#### [How to reverse a string without using built-in methods?](#how-to-reverse-a-string-without-using-built-in-methods)
-- Loop through the string from end to start and create a new reversed string.
-
-#### [How to find the factorial of a number using recursion?](#how-to-find-the-factorial-of-a-number-using-recursion)
-- Use a recursive function where the base case is 1.
-
-#### [How to find the first non-repeated character in a string?](#how-to-find-the-first-non-repeated-character-in-a-string)
-- Use an object or `Map` to track character frequencies.
-
-#### [What are the steps to check if a number is prime?](#what-are-the-steps-to-check-if-a-number-is-prime)
-- Check if the number is divisible by any number from 2 to its square root.
-
-#### [How to implement a basic stack data structure in JavaScript?](#how-to-implement-a-basic-stack-data-structure-in-javascript)
-- Create a `Stack` class with `push`, `pop`, and `peek` methods.
-
-#### [How to find the maximum product of two integers in an array?](#how-to-find-the-maximum-product-of-two-integers-in-an-array)
-- Sort the array and return the product of the two largest or two smallest numbers.
+Sure! Here's the content for each link so you can check if the links are working properly. I'll use placeholder text for the explanations, but you can replace them with detailed explanations or code snippets as needed:
 
 ---
 
+### Coding Problems
+
+#### [What are the steps to check if a number is a palindrome?](#what-are-the-steps-to-check-if-a-number-is-a-palindrome)
+To check if a number is a palindrome:
+1. Convert the number to a string.
+2. Reverse the string.
+3. Compare the original string with the reversed string. If they are the same, it's a palindrome.
+
+---
+
+#### [What are the steps to remove duplicates from an array?](#what-are-the-steps-to-remove-duplicates-from-an-array)
+To remove duplicates from an array:
+1. Convert the array to a `Set` to eliminate duplicates.
+2. Convert the `Set` back to an array if needed.
+   Example:
+   ```js
+   let arr = [1, 2, 2, 3, 4];
+   arr = [...new Set(arr)];
+   ```
+
+---
+
+#### [How to find the longest word in a string?](#how-to-find-the-longest-word-in-a-string)
+To find the longest word in a string:
+1. Split the string into an array of words.
+2. Loop through the array and compare word lengths.
+3. Keep track of the longest word.
+   Example:
+   ```js
+   let str = "Find the longest word here";
+   let words = str.split(" ");
+   let longestWord = words.reduce((a, b) => a.length > b.length ? a : b);
+   ```
+
+---
+
+#### [How to check if two strings are anagrams of each other?](#how-to-check-if-two-strings-are-anagrams-of-each-other)
+To check if two strings are anagrams:
+1. Sort both strings.
+2. Compare the sorted strings. If they are the same, the strings are anagrams.
+   Example:
+   ```js
+   let str1 = "listen";
+   let str2 = "silent";
+   let areAnagrams = str1.split("").sort().join("") === str2.split("").sort().join("");
+   ```
+
+---
+
+#### [How to reverse a string without using built-in methods?](#how-to-reverse-a-string-without-using-built-in-methods)
+To reverse a string without using built-in methods:
+1. Loop through the string from the last character to the first.
+2. Concatenate each character to a new string.
+   Example:
+   ```js
+   let str = "hello";
+   let reversed = "";
+   for (let i = str.length - 1; i >= 0; i--) {
+     reversed += str[i];
+   }
+   ```
+
+---
+
+#### [How to find the factorial of a number using recursion?](#how-to-find-the-factorial-of-a-number-using-recursion)
+To find the factorial of a number using recursion:
+1. Define a recursive function that multiplies the current number with the factorial of the previous number.
+2. Base case: return 1 when the number is 0.
+   Example:
+   ```js
+   function factorial(n) {
+     if (n === 0) return 1;
+     return n * factorial(n - 1);
+   }
+   ```
+
+---
+
+#### [How to find the first non-repeated character in a string?](#how-to-find-the-first-non-repeated-character-in-a-string)
+To find the first non-repeated character:
+1. Loop through the string and count the occurrences of each character.
+2. Return the first character that occurs only once.
+   Example:
+   ```js
+   let str = "swiss";
+   let charCount = {};
+   for (let char of str) {
+     charCount[char] = (charCount[char] || 0) + 1;
+   }
+   let firstNonRepeated = Object.keys(charCount).find(char => charCount[char] === 1);
+   ```
+
+---
+
+#### [What are the steps to check if a number is prime?](#what-are-the-steps-to-check-if-a-number-is-prime)
+To check if a number is prime:
+1. Loop from 2 to the square root of the number.
+2. If the number is divisible by any number in this range, it's not prime.
+3. If no divisor is found, the number is prime.
+   Example:
+   ```js
+   function isPrime(num) {
+     for (let i = 2; i <= Math.sqrt(num); i++) {
+       if (num % i === 0) return false;
+     }
+     return num > 1;
+   }
+   ```
+
+---
+
+#### [How to implement a basic stack data structure in JavaScript?](#how-to-implement-a-basic-stack-data-structure-in-javascript)
+To implement a basic stack:
+1. Create a class `Stack` with methods like `push`, `pop`, and `peek`.
+2. Use an array to store stack elements.
+   Example:
+   ```js
+   class Stack {
+     constructor() {
+       this.stack = [];
+     }
+     push(element) {
+       this.stack.push(element);
+     }
+     pop() {
+       return this.stack.pop();
+     }
+     peek() {
+       return this.stack[this.stack.length - 1];
+     }
+   }
+   ```
+
+---
+
+#### [How to find the maximum product of two integers in an array?](#how-to-find-the-maximum-product-of-two-integers-in-an-array)
+To find the maximum product of two integers:
+1. Sort the array.
+2. The maximum product will be either the product of the two largest or two smallest numbers.
+   Example:
+   ```js
+   let arr = [-10, -10, 5, 2];
+   arr.sort((a, b) => a - b);
+   let maxProduct = Math.max(arr[0] * arr[1], arr[arr.length - 1] * arr[arr.length - 2]);
+   ```
+
+---
+
+
 #### [What is the difference between `var`, `let`, and `const` in JavaScript?](#what-is-the-difference-between-var-let-and-const-in-javascript)
-- `var`: Function-scoped, can be re-assigned.
-- `let`: Block-scoped, can be re-assigned.
-- `const`: Block-scoped, cannot be re-assigned.
+- `var` is function-scoped and can be re-assigned.
+- `let` is block-scoped and can be re-assigned.
+- `const` is block-scoped and cannot be re-assigned after initialization.
+
+---
 
 #### [What is the difference between `==` and `===` in JavaScript?](#what-is-the-difference-between-and-in-javascript)
-- `==` performs type coercion, while `===` checks both value and type without coercion.
+- `==` performs type coercion, meaning it converts operands to a common type before comparison.
+- `===` checks both the value and the type without type coercion.
+
+---
 
 #### [How does JavaScript interact with the DOM?](#how-does-javascript-interact-with-the-dom)
-- JavaScript can manipulate HTML elements, change styles, and handle events through the DOM.
+JavaScript interacts with the DOM by using methods like `getElementById`, `querySelector`, and `addEventListener` to manipulate HTML elements, styles, and handle events.
+
+---
 
 #### [What is hoisting in JavaScript, and how does it work?](#what-is-hoisting-in-javascript-and-how-does-it-work)
-- Hoisting is the process of moving declarations to the top of their scope before execution.
+Hoisting is the behavior in JavaScript where variable and function declarations are moved to the top of their scope before code execution. However, only the declarations are hoisted, not the initializations.
+
+---
 
 #### [What is `MutationObserver`, and what are its use cases?](#what-is-mutationobserver-and-what-are-its-use-cases)
-- `MutationObserver` allows you to watch for changes in the DOM and act accordingly.
+`MutationObserver` is an API used to detect changes in the DOM. It’s useful for reacting to changes such as element creation, deletion, or attribute modifications.
+
+---
 
 #### [What is JavaScript prototypes, and how do they function?](#what-are-javascript-prototypes-and-how-do-they-function)
-- Prototypes allow objects to inherit properties and methods from other objects.
+In JavaScript, every object has a prototype. The prototype is used for inheritance, and objects can access properties and methods defined on their prototype.
+
+---
 
 #### [What are higher-order functions, and how do they work?](#what-are-higher-order-functions-and-how-do-they-work)
-- Higher-order functions are functions that take other functions as arguments or return functions.
+Higher-order functions are functions that can take other functions as arguments or return them. They are a key feature of functional programming.
+
+---
 
 #### [What is functional programming, and how is it applied in JavaScript?](#what-is-functional-programming-and-how-is-it-applied-in-javascript)
-- It focuses on writing functions that avoid side effects and use pure functions.
+Functional programming in JavaScript emphasizes immutability, pure functions, and higher-order functions. It avoids side effects and promotes a declarative coding style.
+
+---
 
 #### [How can you optimize DOM manipulations for better performance?](#how-can-you-optimize-dom-manipulations-for-better-performance)
-- Minimize reflows and repaints by batch-processing DOM changes or using `DocumentFragment`.
+To optimize DOM manipulations:
+1. Minimize reflows and repaints by batch-processing DOM changes.
+2. Use `DocumentFragment` for off-DOM tree manipulations.
+3. Avoid excessive use of `innerHTML`.
+
+---
 
 #### [What are closures in JavaScript, and how are they used?](#what-are-closures-in-javascript-and-how-are-they-used)
-- Closures allow functions to remember their lexical scope even when executed outside that scope.
+Closures are functions that have access to their lexical scope, even when they are executed outside of that scope. They are commonly used for data encapsulation and function factories.
+
+---
 
 #### [How does JavaScript handle asynchronous operations?](#how-does-javascript-handle-asynchronous-operations)
-- JavaScript uses callbacks, promises, and async/await to manage async operations.
+JavaScript handles asynchronous operations using callbacks, promises, and async/await. These mechanisms allow non-blocking code execution while waiting for external resources or operations.
 
 ---
