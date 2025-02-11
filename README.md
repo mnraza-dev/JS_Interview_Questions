@@ -40,6 +40,19 @@ Sure! Here's the content for each link so you can check if the links are working
 
 ### Coding Problems
 
+## Palindrome Number
+```js
+function factorialNum(x){
+    let fact = 1
+    for(let i=2; i<=x; i++){
+            fact = fact* i
+    }
+    return fact;
+}
+
+console.log(factorialNum(4))
+```
+## Fibbonacci Number
 ```js
 const fibboNums =[0,1]
 function getFibbonacci(x){
