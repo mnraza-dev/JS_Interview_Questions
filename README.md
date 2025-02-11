@@ -40,6 +40,18 @@ Sure! Here's the content for each link so you can check if the links are working
 
 ### Coding Problems
 
+```js
+const fibboNums =[0,1]
+function getFibbonacci(x){
+    for(let i=2; i< x; i++){
+       fibboNums[i] =  fibboNums[i-1] + fibboNums[i-2]  
+    }
+    return fibboNums;
+}
+```
+
+console.log(getFibbonacci(7))
+
 #### [What are the steps to check if a number is a palindrome?](#what-are-the-steps-to-check-if-a-number-is-a-palindrome)
 To check if a number is a palindrome:
 1. Convert the number to a string.
