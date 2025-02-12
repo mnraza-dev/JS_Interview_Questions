@@ -40,7 +40,7 @@ Sure! Here's the content for each link so you can check if the links are working
 
 ### Coding Problems
 
-#### Palindrome Number
+#### Factorial 
 ```js
 function factorialNum(x){
     let fact = 1
@@ -52,7 +52,7 @@ function factorialNum(x){
 
 console.log(factorialNum(4))
 ```
-#### Fibbonacci Number
+#### Fibbonacci Series
 ```js
 const fibboNums =[0,1]
 function getFibbonacci(x){
